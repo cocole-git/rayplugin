@@ -141,40 +141,11 @@ chmod +x tcp.sh && ./tcp.sh
 wget https://www.moerats.com/usr/shell/swap.sh && bash swap.sh
 ~~~
 
-### [推荐] 脚本部署
-
-#### Docker-compose 安装 
-这里一直保持最新版
-~~~
-mkdir v2ray-agent  &&  \
-cd v2ray-agent && \
-curl https://raw.githubusercontent.com/rico93/v2ray-sspanel-v3-mod_Uim-plugin/master/install.sh -o install.sh && \
-chmod +x install.sh && \
-bash install.sh
-~~~
-
-
-#### 普通安装
-##### 安装v2ray 
-修改了官方安装脚本
-用脚本指定面板信息，请务必删除原有的config.json, 否则不会更新config.json
-
-安装（这里保持最新版本）
-~~~
-bash <(curl -L -s  https://raw.githubusercontent.com/rico93/v2ray-sspanel-v3-mod_Uim-plugin/master/install-release.sh) --panelurl https://xxxx --panelkey xxxx --nodeid 21
-~~~
-
-后续升级（如果要更新到最新版本）
-~~~
-bash <(curl -L -s  https://raw.githubusercontent.com/rico93/v2ray-sspanel-v3-mod_Uim-plugin/master/install-release.sh)
-~~~
-
 
 如果要强制安装某个版本
 
-~~~
 bash <(curl -L -s  https://raw.githubusercontent.com/rico93/v2ray-sspanel-v3-mod_Uim-plugin/master/install-release.sh) -f --version 4.12.0
-~~~
+
 
 
 config.json Example 
